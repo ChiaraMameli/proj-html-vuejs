@@ -1,4 +1,5 @@
 <template>
+<span>ciao</span>
 </template>
 
 <script>
@@ -9,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import 'bootstrap';
 
 </style>
