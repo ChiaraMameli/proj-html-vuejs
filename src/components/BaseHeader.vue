@@ -1,14 +1,16 @@
 <template>
     <header>
         <HeaderMenu :NavLinks="NavLinks" />
+        <HeaderJumbotron />
     </header>
 </template>
 
 <script>
 import HeaderMenu from "./HeaderMenu.vue";
+import HeaderJumbotron from "./HeaderJumbotron.vue";
 export default {
     name: "BaseHeader",
-    components: { HeaderMenu },
+    components: { HeaderMenu, HeaderJumbotron },
     data(){
     return{
         NavLinks: [
