@@ -1,5 +1,7 @@
 <template>
-  <BaseHeader />
+  <div>
+    <BaseHeader />
+  </div>
 </template>
 
 <script>
