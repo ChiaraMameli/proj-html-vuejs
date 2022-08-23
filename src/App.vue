@@ -12,5 +12,6 @@ export default {
 
 <style lang="scss">
 @import 'bootstrap';
+@import './assets/sass/style.scss';
 
 </style>
