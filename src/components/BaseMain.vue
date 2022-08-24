@@ -5,6 +5,7 @@
     <SectionEmpower />
     <SectionTestimonials />
     <SectionArticle />
+    <SectionPopularPlans :PopularPlans="PopularPlans" />
 </div>
 </template>
 
@@ -14,6 +15,7 @@ import TrustedName from './TrustedName.vue';
 import SectionEmpower from './SectionEmpower.vue'
 import SectionTestimonials from './SectionTestimonials.vue';
 import SectionArticle from './SectionArticle.vue';
+import SectionPopularPlans from './SectionPopularPlans.vue';
 export default {
     name: "BaseMain",
     data() {
@@ -49,10 +51,49 @@ export default {
                     imgUrl: "scissors",
                     id: 6,
                 },
+            ],
+
+            PopularPlans:[
+                {
+                    title: 'Android Developer',
+                    imgUrl: 'android-developer',
+                    teacher: 'David Sanders',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam repellat ex animi ipsam fugit recusandae officiis provident officia esse!',
+                    numberOfPeople: '1',
+                    field: 'Programming',
+                    id: 1,
+                },
+                {
+                    title: 'Web Design',
+                    imgUrl: 'web-design',
+                    teacher: 'Jennifer Powell',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam repellat ex animi ipsam fugit recusandae officiis provident officia esse!',
+                    numberOfPeople: '1',
+                    field: 'Programming',
+                    id: 2,
+                },
+                {
+                    title: 'Financial Modeling',
+                    imgUrl: 'financial-modeling',
+                    teacher: 'Edward Bowman',
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam repellat ex animi ipsam fugit recusandae officiis provident officia esse!',
+                    numberOfPeople: '1',
+                    field: 'Business',
+                    id: 3,
+                },
+
             ]
         };
+        
     },
-    components: { LearningFieldsCards, TrustedName, SectionEmpower, SectionTestimonials, SectionArticle }
+    components: { 
+        LearningFieldsCards, 
+        TrustedName, 
+        SectionEmpower, 
+        SectionTestimonials, 
+        SectionArticle, 
+        SectionPopularPlans 
+        }
 }
 </script>
 
