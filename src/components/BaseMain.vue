@@ -7,6 +7,7 @@
     <SectionArticle />
     <SectionPopularPlans :PopularPlans="PopularPlans" />
     <SectionPricingPlans />
+    <SectionPartners />
 </div>
 </template>
 
@@ -18,6 +19,7 @@ import SectionTestimonials from './SectionTestimonials.vue';
 import SectionArticle from './SectionArticle.vue';
 import SectionPopularPlans from './SectionPopularPlans.vue';
 import SectionPricingPlans from './SectionPricingPlans.vue';
+import SectionPartners from './SectionPartners.vue';
 export default {
     name: "BaseMain",
     data() {
@@ -95,7 +97,8 @@ export default {
     SectionTestimonials,
     SectionArticle,
     SectionPopularPlans,
-    SectionPricingPlans
+    SectionPricingPlans,
+    SectionPartners
 }
 }
 </script>
