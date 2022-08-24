@@ -3,6 +3,7 @@
     <h3 class="pb-2">The Trusted Name for In-Home Tutoring</h3>
     <span class="d-block pb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis soluta esse iusto minima numquam explicabo reprehenderit fugiat! Modi hic ipsum voluptas, debitis vero saepe! Inventore commodi nemo totam quisquam ratione.</span>
     <a href="#" class="text-uppercase">Learn More</a>
+    <img src="../assets/img/students.jpg" alt="students" class="d-block">
   </section>
 </template>
 
@@ -28,6 +29,10 @@ section{
 
     a{
         color: $primary_colour;
+    }
+
+    img{
+        width: 100%;
     }
 }
 </style>

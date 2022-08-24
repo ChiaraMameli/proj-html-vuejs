@@ -2,12 +2,14 @@
 <div>
     <LearningFieldsCards :LearningFields="LearningFields" />
     <TrustedName />
+    <SectionEmpower />
 </div>
 </template>
 
 <script>
 import LearningFieldsCards from './LearningFieldsCards.vue';
 import TrustedName from './TrustedName.vue';
+import SectionEmpower from './SectionEmpower.vue'
 export default {
     name: "BaseMain",
     data() {
@@ -46,7 +48,7 @@ export default {
             ]
         };
     },
-    components: { LearningFieldsCards, TrustedName }
+    components: { LearningFieldsCards, TrustedName, SectionEmpower }
 }
 </script>
 
