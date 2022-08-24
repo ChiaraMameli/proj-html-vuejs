@@ -3,6 +3,7 @@
     <LearningFieldsCards :LearningFields="LearningFields" />
     <TrustedName />
     <SectionEmpower />
+    <SectionTestimonials />
 </div>
 </template>
 
@@ -10,6 +11,7 @@
 import LearningFieldsCards from './LearningFieldsCards.vue';
 import TrustedName from './TrustedName.vue';
 import SectionEmpower from './SectionEmpower.vue'
+import SectionTestimonials from './SectionTestimonials.vue';
 export default {
     name: "BaseMain",
     data() {
@@ -48,7 +50,7 @@ export default {
             ]
         };
     },
-    components: { LearningFieldsCards, TrustedName, SectionEmpower }
+    components: { LearningFieldsCards, TrustedName, SectionEmpower, SectionTestimonials }
 }
 </script>
 
