@@ -6,6 +6,7 @@
     <SectionTestimonials />
     <SectionArticle />
     <SectionPopularPlans :PopularPlans="PopularPlans" />
+    <SectionPricingPlans />
 </div>
 </template>
 
@@ -16,6 +17,7 @@ import SectionEmpower from './SectionEmpower.vue'
 import SectionTestimonials from './SectionTestimonials.vue';
 import SectionArticle from './SectionArticle.vue';
 import SectionPopularPlans from './SectionPopularPlans.vue';
+import SectionPricingPlans from './SectionPricingPlans.vue';
 export default {
     name: "BaseMain",
     data() {
@@ -86,14 +88,15 @@ export default {
         };
         
     },
-    components: { 
-        LearningFieldsCards, 
-        TrustedName, 
-        SectionEmpower, 
-        SectionTestimonials, 
-        SectionArticle, 
-        SectionPopularPlans 
-        }
+    components: {
+    LearningFieldsCards,
+    TrustedName,
+    SectionEmpower,
+    SectionTestimonials,
+    SectionArticle,
+    SectionPopularPlans,
+    SectionPricingPlans
+}
 }
 </script>
 

@@ -8,10 +8,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faTag } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 
 
-library.add(faMagnifyingGlass, faBagShopping, faBars, faCheck, faUser, faTag)
+
+library.add(faMagnifyingGlass, faBagShopping, faBars, faCheck, faUser, faTag, faXmark)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
