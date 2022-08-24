@@ -1,12 +1,12 @@
 <template>
-  <div class="container pt-5">
+  <section class="container pt-5 pb-5">
     <div class="d-flex justify-content-between">
         <div v-for="field in LearningFields" :key="field.id" class="_card p-4">
             <img :src="require(`../assets/img/${field.imgUrl}.png`)" :alt="field.label" class="p-4">
             <h5 class="p-4">{{field.label}}</h5>
         </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

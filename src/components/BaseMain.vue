@@ -1,11 +1,13 @@
 <template>
 <div>
     <LearningFieldsCards :LearningFields="LearningFields" />
+    <TrustedName />
 </div>
 </template>
 
 <script>
 import LearningFieldsCards from './LearningFieldsCards.vue';
+import TrustedName from './TrustedName.vue';
 export default {
     name: "BaseMain",
     data() {
@@ -44,7 +46,7 @@ export default {
             ]
         };
     },
-    components: { LearningFieldsCards }
+    components: { LearningFieldsCards, TrustedName }
 }
 </script>
 
