@@ -1,5 +1,5 @@
 <template>
-  <nav class="container d-flex justify-content-between">
+  <nav id="top-page" class="container d-flex justify-content-between">
     <div id="header-logo"><a href="#"><img src="../assets/img/logo-default.png" alt="iAcademy Logo"></a></div>
     <div>
         <ul  class="d-flex align-items-center h-100">

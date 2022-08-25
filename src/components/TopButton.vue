@@ -1,5 +1,5 @@
 <template>
-    <button type="button"><FontAwesomeIcon icon="fa-solid fa-angle-up" /><br />TOP</button>
+    <a href="#top-page"><FontAwesomeIcon icon="fa-solid fa-angle-up" /><br />TOP</a>
 </template>
 
 <script>
@@ -10,11 +10,12 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/sass/colours';
-    button{
+    a{
         height: 3rem;
         width: 3rem;
         background-color: $primary_colour;
         border: none;
+        padding: 0.2rem;
 
         color: #FFF;
         font-size: 0.8rem;
@@ -23,5 +24,9 @@ export default {
         position: fixed;
         right: 52px;
         bottom: 20px;
+
+        &:hover {
+            color: #FFF;
+        }
     }
 </style>
