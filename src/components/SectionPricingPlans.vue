@@ -69,7 +69,9 @@ export default {
 
     section{
         margin-bottom: 5rem;
-        
+        background: rgba(247, 249, 248, 0.2) url(../assets/img/page-background-img.png);
+        background-size: cover;
+
         h3{
             margin-top: 5rem;
             font-size: 3rem;
@@ -87,6 +89,7 @@ export default {
 
     .my-table{
         margin-top: 5rem;
+        background-color: #FFF;
 
         & .selectable{
             background-color: $lighter_blue;

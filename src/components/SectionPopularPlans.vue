@@ -34,6 +34,10 @@ export default {
         border-top: 1px solid $border_colour;
         border-bottom: 1px solid $border_colour;
 
+        background: rgba(247, 249, 248, 0.2) url(../assets/img/page-background-img.png);
+        background-size: cover;
+
+
         text-align: center;
 
         h3{
@@ -52,6 +56,7 @@ export default {
 
         ._card{
             border: 1px solid $border_colour;
+            background-color: #FFF;
             margin-bottom: 5rem;
             padding: 0;
 
