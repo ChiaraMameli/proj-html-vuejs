@@ -52,7 +52,7 @@ export default {
 @import '../assets/sass/colours';
 
 header{
-    height: 700px;
+    height: 710px;
 
     background: rgba(0, 0, 0, .3) url(../assets/img/header-slide-1.jpg);
     background-size: cover;
