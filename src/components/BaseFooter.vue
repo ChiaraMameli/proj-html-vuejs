@@ -18,6 +18,7 @@ export default {
 @import '../assets/sass/colours';
 
 footer{
+    padding-top: 5rem;
     height: 700px;
     background-color: $footer_colour ;
 }
