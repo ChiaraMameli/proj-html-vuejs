@@ -55,55 +55,7 @@
 <script>
 export default {
     name: 'SectionPricingPlans',
-    data(){
-        return{
-            PricingPlans: [
-                {
-                    id: 1,
-                    imgUrl:'',
-                    label: 'Standard',
-                    price: '$12',
-                    numberOfCourses: '2',
-                    time: '15 Days',
-                    webDesigning: true,
-                    humanCenteredDesign: true,
-                    basicMarketing: false,
-                    phyton: false,
-                    androidDeveloper: false,
-                    businessEnglish: false,
-                },
-                {
-                    id: 2,
-                    imgUrl:'',
-                    label: 'Professional',
-                    price: '$59',
-                    numberOfCourses: '4',
-                    time: '30Days',
-                    webDesigning: true,
-                    humanCenteredDesign: true,
-                    basicMarketing: true,
-                    phyton: true,
-                    androidDeveloper: false,
-                    businessEnglish: false,
-                },
-                {
-                    id: 3,
-                    imgUrl:'',
-                    label: 'Advanced',
-                    price: '$88',
-                    numberOfCourses: '6',
-                    time: '30 Days',
-                    webDesigning: true,
-                    humanCenteredDesign: true,
-                    basicMarketing: true,
-                    phyton: true,
-                    androidDeveloper: true,
-                    businessEnglish: true,
-                },
-
-            ]
-            }
-    },
+    props: {PricingPlans:  Array}
 }
 </script>
 

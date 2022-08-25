@@ -1,18 +1,18 @@
 <template>
-<div>
-    <LearningFieldsCards :LearningFields="LearningFields" />
+<main>
+    <SectionFieldsCards :Fields="Fields" />
     <TrustedName />
     <SectionEmpower />
     <SectionTestimonials />
     <SectionArticle />
     <SectionPopularPlans :PopularPlans="PopularPlans" />
-    <SectionPricingPlans />
-    <SectionPartners />
-</div>
+    <SectionPricingPlans :PricingPlans="PricingPlans" />
+    <SectionPartners :Partners="Partners" />
+</main>
 </template>
 
 <script>
-import LearningFieldsCards from './LearningFieldsCards.vue';
+import SectionFieldsCards from './SectionFieldsCards.vue';
 import TrustedName from './TrustedName.vue';
 import SectionEmpower from './SectionEmpower.vue'
 import SectionTestimonials from './SectionTestimonials.vue';
@@ -22,9 +22,19 @@ import SectionPricingPlans from './SectionPricingPlans.vue';
 import SectionPartners from './SectionPartners.vue';
 export default {
     name: "BaseMain",
+    components: {
+        SectionFieldsCards,
+        TrustedName,
+        SectionEmpower,
+        SectionTestimonials,
+        SectionArticle,
+        SectionPopularPlans,
+        SectionPricingPlans,
+        SectionPartners
+    },
     data() {
         return {
-            LearningFields: [
+            Fields: [
                 {
                     label: "languages",
                     imgUrl: "globe",
@@ -86,20 +96,79 @@ export default {
                     id: 3,
                 },
 
+            ],
+
+            PricingPlans: [
+                {
+                    id: 1,
+                    imgUrl:'',
+                    label: 'Standard',
+                    price: '$12',
+                    numberOfCourses: '2',
+                    time: '15 Days',
+                    webDesigning: true,
+                    humanCenteredDesign: true,
+                    basicMarketing: false,
+                    phyton: false,
+                    androidDeveloper: false,
+                    businessEnglish: false,
+                },
+                {
+                    id: 2,
+                    imgUrl:'',
+                    label: 'Professional',
+                    price: '$59',
+                    numberOfCourses: '4',
+                    time: '30Days',
+                    webDesigning: true,
+                    humanCenteredDesign: true,
+                    basicMarketing: true,
+                    phyton: true,
+                    androidDeveloper: false,
+                    businessEnglish: false,
+                },
+                {
+                    id: 3,
+                    imgUrl:'',
+                    label: 'Advanced',
+                    price: '$88',
+                    numberOfCourses: '6',
+                    time: '30 Days',
+                    webDesigning: true,
+                    humanCenteredDesign: true,
+                    basicMarketing: true,
+                    phyton: true,
+                    androidDeveloper: true,
+                    businessEnglish: true,
+                },
+
+            ],
+
+            Partners:[
+                {
+                    id: 1,
+                    label: 'Teach Hub',
+                    imgUrl: 'teach-hub'
+                },
+                {
+                    id: 2,
+                    label: 'Study Central',
+                    imgUrl: 'study-central'
+                },
+                {
+                    id: 3,
+                    label: 'Educator',
+                    imgUrl: 'educator'
+                },
+                {
+                    id: 4,
+                    label: 'Scholar',
+                    imgUrl: 'scholar'
+                },
             ]
         };
         
     },
-    components: {
-    LearningFieldsCards,
-    TrustedName,
-    SectionEmpower,
-    SectionTestimonials,
-    SectionArticle,
-    SectionPopularPlans,
-    SectionPricingPlans,
-    SectionPartners
-}
 }
 </script>
 
