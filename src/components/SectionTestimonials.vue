@@ -28,7 +28,8 @@ export default {
 
         img{
             border-radius: 50%;
-            width: 10%;
+            width: 15%;
+            object-fit: contain;
         }
 
         span {

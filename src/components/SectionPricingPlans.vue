@@ -49,8 +49,9 @@
             <div class="my-table-button">
                 <button type="button" class="_bttn">GET IT NOW</button>
             </div>
-
         </div>
+        <div class="label red-label"><img src="../assets/img/svg-0.svg" alt=""></div>
+        <div class="label"><img src="../assets/img/svg-2.svg" alt=""></div>
     </div>
 
   </section>
@@ -71,6 +72,8 @@ export default {
         margin-bottom: 5rem;
         background: rgba(247, 249, 248, 0.2) url(../assets/img/page-background-img.png);
         background-size: cover;
+
+        position: relative;
 
         h3{
             margin-top: 5rem;
@@ -166,6 +169,27 @@ export default {
             background-color: $primary_colour;
             color: #FFF;
         }
+    }
+
+    .label{
+        height: 3rem;
+        width: 3rem;
+        background-color: #FFF;
+        border: none;
+        padding: 0.5rem;
+
+        position: absolute;
+        left: 98%;
+        bottom: 745px;
+
+        box-shadow: 1px 1px 3px #606264;
+
+    }
+
+    .red-label{
+        background-color: #EE2852;
+        bottom: 800px;
+
     }
 
 </style>

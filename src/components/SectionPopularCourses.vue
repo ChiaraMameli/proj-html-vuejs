@@ -3,14 +3,14 @@
     <h3>Popular Online Courses</h3>
     <span class="d-block pt-2 pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia laudantium sed ad, beatae ipsum sint repudiandae quae amet repellat voluptatum at atque neque tempore cum dolorem quibusdam fugit. Voluptas, sapiente.</span>
     <div class="row justify-content-between pt-5">
-        <div v-for="plan in PopularPlans" :key="plan.id" class="col-3 _card">
-            <img :src="require(`../assets/img/${plan.imgUrl}.jpg`)" alt="Android Developer">
+        <div v-for="course in PopularCourses" :key="course.id" class="col-3 _card">
+            <img :src="require(`../assets/img/${course.imgUrl}.jpg`)" alt="Android Developer">
             <div class="p-4">
-                <h5 class="m-0">{{plan.title}}</h5>
-                <span class="plan-teacher d-block pt-2 pb-2">{{plan.teacher}}</span>
-                <span class="plan-description d-block pb-2">{{plan.description}}</span>
-                <FontAwesomeIcon class="plan-icon" icon="fa-solid fa-user" /> <span class="plan-generic-data">{{plan.numberOfPeople}}</span>
-                <FontAwesomeIcon class="plan-icon" icon="fa-solid fa-tag" /> <span class="plan-generic-data text-uppercase">{{plan.field}}</span>
+                <h5 class="m-0">{{course.title}}</h5>
+                <span class="course-teacher d-block pt-2 pb-2">{{course.teacher}}</span>
+                <span class="course-description d-block pb-2">{{course.description}}</span>
+                <FontAwesomeIcon class="course-icon" icon="fa-solid fa-user" /> <span class="course-generic-data">{{course.numberOfPeople}}</span>
+                <FontAwesomeIcon class="course-icon" icon="fa-solid fa-tag" /> <span class="course-generic-data text-uppercase">{{course.field}}</span>
             </div>
         </div>
     </div>
@@ -19,9 +19,9 @@
 
 <script>
 export default {
-    name: 'SectionPopularPlans',
+    name: 'SectionPopularCourses',
     props:{
-        PopularPlans: Array,
+        PopularCourses: Array,
     },
 }
 </script>
@@ -72,28 +72,28 @@ export default {
                 font-weight: 700;
             }
 
-            .plan-teacher {
+            .course-teacher {
                 font-size: 0.9rem;
                 color: #B9B9B9;
                 font-weight: 200;
             }
 
-            .plan-description {
+            .course-description {
                 font-size: 1rem;
                 font-weight: 100;
                 color: $text_colour;
             }
 
-            .plan-icon{
+            .course-icon{
                 padding-right: 0.2rem;
             }
 
-            .plan-generic-data {
+            .course-generic-data {
                 padding-right: 0.6rem;
             }
 
-            .plan-icon,
-            .plan-generic-data {
+            .course-icon,
+            .course-generic-data {
                 color: #B9B9B9;
                 font-size: 0.8rem;
                 font-weight: 500;

@@ -4,8 +4,8 @@
     <SectionIntroduction />
     <SectionEmpower />
     <SectionTestimonials />
-    <SectionArticle />
-    <SectionPopularPlans :PopularPlans="PopularPlans" />
+    <SectionArticle :ArticleLinks="ArticleLinks" />
+    <SectionPopularCourses :PopularCourses="PopularCourses" />
     <SectionPricingPlans :PricingPlans="PricingPlans" />
     <SectionPartners :Partners="Partners" />
 </main>
@@ -17,7 +17,7 @@ import SectionIntroduction from './SectionIntroduction.vue';
 import SectionEmpower from './SectionEmpower.vue'
 import SectionTestimonials from './SectionTestimonials.vue';
 import SectionArticle from './SectionArticle.vue';
-import SectionPopularPlans from './SectionPopularPlans.vue';
+import SectionPopularCourses from './SectionPopularCourses.vue';
 import SectionPricingPlans from './SectionPricingPlans.vue';
 import SectionPartners from './SectionPartners.vue';
 export default {
@@ -28,7 +28,7 @@ export default {
     SectionEmpower,
     SectionTestimonials,
     SectionArticle,
-    SectionPopularPlans,
+    SectionPopularCourses,
     SectionPricingPlans,
     SectionPartners,
 },
@@ -67,7 +67,7 @@ export default {
                 },
             ],
 
-            PopularPlans:[
+            PopularCourses:[
                 {
                     title: 'Android Developer',
                     imgUrl: 'android-developer',
@@ -170,6 +170,31 @@ export default {
                     imgUrl: 'scholar',
                     link: '#',
 
+                },
+            ],
+            ArticleLinks:[
+                {
+                    label: 'What We Do',
+                    id: 1,
+                },
+                                {
+                    label: 'Degree Programme',
+                    id: 2,
+                },
+                {
+                    label: 'Career Achievements'
+                },
+                {
+                    label: 'Personal Management',
+                    id: 4,
+                },
+                {
+                    label: 'Steps To Success',
+                    id: 5,
+                },
+                {
+                    label: 'Knowledge Transfer',
+                    id: 6,
                 },
             ]
         };
