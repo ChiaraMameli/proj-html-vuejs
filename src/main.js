@@ -15,8 +15,9 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faMagnifyingGlass, faBagShopping, faBars, faCheck, faUser, faTag, faXmark, faPhone, faClock, faCopyright, faTwitter, faInstagram, faFacebook)
+library.add(faMagnifyingGlass, faBagShopping, faBars, faCheck, faUser, faTag, faXmark, faPhone, faClock, faCopyright, faTwitter, faInstagram, faFacebook, faAngleUp)
 Vue.component('FontAwesomeIcon', FontAwesomeIcon)
 
 Vue.config.productionTip = false

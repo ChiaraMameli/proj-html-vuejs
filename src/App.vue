@@ -3,6 +3,7 @@
     <BaseHeader />
     <BaseMain />
     <BaseFooter />
+    <TopButton />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import BaseHeader from './components/BaseHeader.vue';
 import BaseMain from './components/BaseMain.vue';
 import BaseFooter from './components/BaseFooter.vue';
+import TopButton from './components/TopButton.vue';
 export default {
   name: 'App',
   components: {
     BaseHeader,
     BaseMain,
-    BaseFooter
+    BaseFooter,
+    TopButton
 }
 }
 </script>
