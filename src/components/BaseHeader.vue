@@ -2,6 +2,10 @@
     <header>
         <HeaderMenu :NavLinks="NavLinks" />
         <HeaderJumbotron />
+        <div class="d-flex justify-content-center">
+            <div v-for="n in 3" :key="n" class="dot"></div>
+            <div class="selected-dot"></div>
+        </div>
     </header>
 </template>
 
@@ -57,6 +61,21 @@ header{
     background-blend-mode: darken;
 
     color: #FFF;
+
+    .dot{
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin-right: 0.5rem;
+
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(0.5);
+            background-color: #FFF;
+        }
+    }
 }
 
 </style>
