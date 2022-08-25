@@ -1,10 +1,16 @@
 <template>
-  <section class="container d-flex align-items-center pt-5 pb-5">
-    <div class="text-center">
-        <img src="../assets/img/joan-collins.jpg" alt="Joan Collins">
-        <span class="testimonial-quote d-block pt-4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptas ad pariatur mollitia, voluptatum nemo ab libero debitis ut officiis cum fugit ipsam id? Recusandae dignissimos quaerat laboriosam modi esse!"</span>
-        <span class="testimonial-name d-block pt-4">Joan Collins</span>
-        <span class="testimonial-status d-block text-uppercase pt-2">student</span>
+  <section class="container align-items-center pt-5 pb-5">
+    <div class="d-flex">
+        <div class="text-center">
+            <img src="../assets/img/joan-collins.jpg" alt="Joan Collins">
+            <span class="testimonial-quote d-block pt-4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit voluptas ad pariatur mollitia, voluptatum nemo ab libero debitis ut officiis cum fugit ipsam id? Recusandae dignissimos quaerat laboriosam modi esse!"</span>
+            <span class="testimonial-name d-block pt-4">Joan Collins</span>
+            <span class="testimonial-status d-block text-uppercase pt-2">student</span>
+        </div>
+    </div>
+
+    <div id="dots" class="d-flex position-absolute start-50 translate-middle-x">
+        <div v-for="n in 3" :key="n" class="dot"></div>
     </div>
   </section>
 </template>
@@ -26,10 +32,13 @@ export default {
 
         color: #fff;
 
+        position: relative;
+
         img{
             border-radius: 50%;
             width: 15%;
             object-fit: contain;
+            margin-top: 5rem;
         }
 
         span {
@@ -54,5 +63,26 @@ export default {
         .testimonial-status {
             font-size: 0.8rem;
         }
+
+        #dots{
+            bottom: 6rem;
+        }
+
+        .dot{
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 0.5rem;
+        
+
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(0.5);
+            background-color: #FFF;
+        }
+    }
+
     }
 </style>

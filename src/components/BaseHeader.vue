@@ -4,7 +4,6 @@
         <HeaderJumbotron />
         <div class="d-flex justify-content-center">
             <div v-for="n in 3" :key="n" class="dot"></div>
-            <div class="selected-dot"></div>
         </div>
     </header>
 </template>

@@ -27,7 +27,4 @@ export default {
 @import 'bootstrap';
 @import './assets/sass/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;600;700;800;900&display=swap');
-*{
-  font-family: 'Noto Serif HK', serif;
-}
 </style>
