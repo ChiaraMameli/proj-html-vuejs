@@ -19,7 +19,6 @@ export default {
 
 footer{
     padding-top: 5rem;
-    height: 700px;
     background-color: $footer_colour ;
 }
 </style>
