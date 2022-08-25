@@ -51,9 +51,10 @@ export default {
 header{
     height: 700px;
 
-    background-image: url(../assets/img/header-slide-1.jpg);
+    background: rgba(0, 0, 0, .3) url(../assets/img/header-slide-1.jpg);
     background-size: cover;
     background-position: center;
+    background-blend-mode: darken;
 
     color: #FFF;
 }
