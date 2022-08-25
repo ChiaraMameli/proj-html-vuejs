@@ -14,7 +14,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/sass/colours';
+
 section{
+  border-top: 1px solid $border_colour;
     img{
         width: 50%;
     }

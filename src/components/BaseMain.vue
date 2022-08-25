@@ -101,7 +101,7 @@ export default {
             PricingPlans: [
                 {
                     id: 1,
-                    imgUrl:'',
+                    imgUrl:'brain',
                     label: 'Standard',
                     price: '$12',
                     numberOfCourses: '2',
@@ -115,7 +115,7 @@ export default {
                 },
                 {
                     id: 2,
-                    imgUrl:'',
+                    imgUrl:'bulb',
                     label: 'Professional',
                     price: '$59',
                     numberOfCourses: '4',
@@ -129,7 +129,7 @@ export default {
                 },
                 {
                     id: 3,
-                    imgUrl:'',
+                    imgUrl:'hat',
                     label: 'Advanced',
                     price: '$88',
                     numberOfCourses: '6',

@@ -1,6 +1,6 @@
 <template>
   <section class="container pt-5 pb-5">
-    <h4>Popular Online Courses</h4>
+    <h3>Popular Online Courses</h3>
     <span class="d-block pt-2 pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia laudantium sed ad, beatae ipsum sint repudiandae quae amet repellat voluptatum at atque neque tempore cum dolorem quibusdam fugit. Voluptas, sapiente.</span>
     <div class="row justify-content-between pt-5">
         <div v-for="plan in PopularPlans" :key="plan.id" class="col-3 _card">
@@ -36,7 +36,7 @@ export default {
 
         text-align: center;
 
-        h4{
+        h3{
             margin-top: 5rem;
             font-size: 3rem;
             color: $title_colour;
