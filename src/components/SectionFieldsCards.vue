@@ -29,6 +29,7 @@ export default {
 
     h5{
         font-weight: 600;
+        color:$title_colour;
     }
 }
 </style>

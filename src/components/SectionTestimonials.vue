@@ -46,7 +46,7 @@ export default {
 
         .testimonial-quote,
         .testimonial-name {
-            font-size: $span_size;
+            font-size: $text_size;
 
         }
 

@@ -15,12 +15,13 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/sass/colours';
+@import '../assets/sass/utils';
 
 section{
     h4{
-        font-size: 2.5rem;
+        font-size: $title_size;
         font-weight: 700;
-        color: $dark_grey;
+        color: $title_colour;
 
         width: 35%;
     }
@@ -30,8 +31,8 @@ section{
     }
 
     span{
-        color: $grey;
-        font-size: 1.2rem;
+        color: $text_colour;
+        font-size: $text_size;
         font-weight: 100;
     }
 

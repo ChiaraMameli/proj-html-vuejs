@@ -42,14 +42,14 @@ export default {
         }
        
         h4{
-            font-size: $h4_size;
-            color: $dark_grey;
+            font-size: $title_size;
+            color: $title_colour;
             font-weight: 700;
         }
 
         span{
-        color: $grey;
-        font-size: $span_size;
+        color: $text_colour;
+        font-size: $text_size;
         font-family: sans-serif;
         font-weight: 100;
 

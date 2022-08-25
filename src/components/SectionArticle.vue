@@ -68,7 +68,7 @@ export default {
             padding: 1.5rem;
             border: 1px solid $border_colour;
             font-weight: 600;
-            color: $span_colour;
+            color: $text_colour;
 
             &:hover{
                 cursor: pointer;
@@ -81,13 +81,13 @@ export default {
         article{
 
             h4{
-                font-size: $h4_size;
-                color: $h4_colour;
+                font-size: $title_size;
+                color: $title_colour;
                 font-weight: 700;
             }
 
             span, li{
-            color: $span_colour;
+            color: $text_colour;
             }
 
             .check-icon{
