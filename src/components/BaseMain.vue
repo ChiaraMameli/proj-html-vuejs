@@ -1,7 +1,7 @@
 <template>
 <main>
     <SectionFieldsCards :Fields="Fields" />
-    <TrustedName />
+    <SectionIntroduction />
     <SectionEmpower />
     <SectionTestimonials />
     <SectionArticle />
@@ -13,7 +13,7 @@
 
 <script>
 import SectionFieldsCards from './SectionFieldsCards.vue';
-import TrustedName from './TrustedName.vue';
+import SectionIntroduction from './SectionIntroduction.vue';
 import SectionEmpower from './SectionEmpower.vue'
 import SectionTestimonials from './SectionTestimonials.vue';
 import SectionArticle from './SectionArticle.vue';
@@ -23,15 +23,15 @@ import SectionPartners from './SectionPartners.vue';
 export default {
     name: "BaseMain",
     components: {
-        SectionFieldsCards,
-        TrustedName,
-        SectionEmpower,
-        SectionTestimonials,
-        SectionArticle,
-        SectionPopularPlans,
-        SectionPricingPlans,
-        SectionPartners
-    },
+    SectionFieldsCards,
+    SectionIntroduction,
+    SectionEmpower,
+    SectionTestimonials,
+    SectionArticle,
+    SectionPopularPlans,
+    SectionPricingPlans,
+    SectionPartners,
+},
     data() {
         return {
             Fields: [
