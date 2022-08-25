@@ -148,22 +148,28 @@ export default {
                 {
                     id: 1,
                     label: 'Teach Hub',
-                    imgUrl: 'teach-hub'
+                    imgUrl: 'teach-hub',
+                    link: '#',
                 },
                 {
                     id: 2,
                     label: 'Study Central',
-                    imgUrl: 'study-central'
+                    imgUrl: 'study-central',
+                    link: '#',
                 },
                 {
                     id: 3,
                     label: 'Educator',
-                    imgUrl: 'educator'
+                    imgUrl: 'educator',
+                    link: '#',
+
                 },
                 {
                     id: 4,
                     label: 'Scholar',
-                    imgUrl: 'scholar'
+                    imgUrl: 'scholar',
+                    link: '#',
+
                 },
             ]
         };
@@ -173,5 +179,4 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 </style>
